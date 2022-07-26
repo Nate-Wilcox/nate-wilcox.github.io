@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+    <link href="../comnponents/navbar.css" rel="stylesheet" type="text/css" />
+    <script src="../components/navbar.js"></script>
+    <link href="../comnponents/card.css" rel="stylesheet" type="text/css" />
+    <link href="../comnponents/about.css" rel="stylesheet" type="text/css" />
+    <link href="../comnponents/footer.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav" aria-label="Navigation menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main" aria-label="Navigation menu button">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; About</span>
+      <div class="container">
+        <div class="header">
+          <h1>About Me</h1>
+        </div><!-- end header-->
+        <div class="about_image">
+          <img class="image" src="../images/65184297_2390748961004515_4999470807332683776_n.jpg" width="300rem">
+        </div><!-- end image-->
+        <div class="intro wrapper">
+          <h2>Introduction</h2>
+          <div class="row">
+            <div class="column">
+              <p>
+                I am a 25 year old frontend/web developer in the Seattle area with photography background.
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                I love to spend my free time renovating my home, playing games and working out with my friends.
+              </p>
+            </div>
+            <div class="column">
+              <p>
+                I love sci-fi and fantasy literature and series. Particularly dystopian literature.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="skills row">
+          <div class="skills column">
+            <h2 style="padding-left: 10rem;">My Skills</h2>
+            <ul id="skill-list">
+              <div class="cards">
+              <li >
+                <div class="card" >
+                  <div class="card-content">
+                  <h3 class="card-title">Software Development</h3>
+                  <p class="card-body">JavaScript, C, C++, Objective, Object-Oriented</p
+                  </div>
+                </div>
+              </li>
+              <li >
+                <div class="card">
+                  <div class="card-content">
+                    <h3 class="card-title">Web  Development</h3>
+                    <p class="card-body">HTML/5, CSS, React.JS, Node.JS, Github</p>
+                  </div>
+                </div>
+              </li>
+              <li >
+                <div class="card">
+                  <div class="card-content">
+                    <h3 class="card-title">Analytical Skills</h3>
+                    <p class="card-body">Problem Solving, Time Management, Critical Thinking</p>
+                  </div>
+                </div>
+              </li>
+              <li >
+                <div class="card">
+                  <div class="card-content">
+                    <h3 class="card-title">Passion for Learning</h3>
+                    <p class="card-body">Lifelong love of learning spurred by passion</p>
+                  </div>
+                </div>
+              </li>
+              <li >
+                <div class="card">
+                  <div class="card-content">
+                    <h3 class="card-title">Technical Communication</h3>
+                    <p class="card-body">Communicating aimed towards non-technical people</p>
+                  </div>
+                </div>
+              </li>
+              <li >
+                <div class="card">
+                  <div class="card-content">
+                    <h3 class="card-title">Photography</h3>
+                    <p class="card-body">Landscape, Portrait, Concept, and Corporate</p>
+                  </div>
+                </div>
+              </li>
+              </div>
+            </ul><!--end skill-list-->
+          </div><!-- end skills-->
+          </div>
+          <div class="wrapper" aria-label="More About Me section">
+              <h2>More About Me</h2>
+              <div class="row">
+                <div class="column">
+                  <p>
+                    I fell in love with programming and computer science as a whole in 2017 when I participated in the Joint Cyber Analysis Course(JCAC) through the US Navy. Once I entered the Naval reserves in 2018 I went back to school, switching from my original major of mechanical engineering. I graduated from Seattle Central College with an Associates of Sciences - Computer Science in 2021. Since then I have transferred to Seattle Pacific University to finish my undergraduate degree. I was a software development intern for Best Buy HQ through the summer of 2022.
+                  </p>
+                </div>
+                <div class="column">
+                  <p>
+                    I'm highly energetic and motivated person and I love to work as a member or a leader of a team. I especially enjoy working with changing projects and taking them forward with rapid pace but high precision. I am normally pretty quiet until I feel comfortable but once I feel comfortable with a team I am a great communicator and thoroughly enjoy working with others.
+                  </p>
+                </div>
+                <div class="column">
+                  <p>
+                    I am also in the process of creating a photography and videography business with a close friend due to our mutual love of those creative forms. If you are interested in a personal, professional, or business photoshoot or commercial ad please reach out in my contact page and indicate so in the message portion.
+                  </p>
+                </div>
+              </div>
+          </div><!-- end main-text-->
+        </div><!--end container-->
+      </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+    </script>
+    <div class="socials">
+      <style>
+        .socials {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          right: 1%;
+          bottom: 50%;
+        }
+
+        .socicon {
+          width: 2rem;
+          height: 2rem;
+        }
+      </style>
+      <a href="https://twitter.com/Nate_Wilcox23" target="_blank"
+        ><img
+          src="../images/twitter.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.instagram.com/natewilcoxphoto/" target="_blank"
+        ><img
+          src="../images//instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/nathaniel-w-822015a7/" target="_blank"
+        ><img
+          src="../images/linkedin.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/Nate-Wilcox" target="_blank"
+        ><img src="../images/github.gif" alt="Github" class="socicon"
+      /></a>
+    </div>
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a
+          href="https://www.linkedin.com/in/nathaniel-w-822015a7/"
+          target="_blank"
+          >Nate Wilcox</a
+        >
+        <h6>Social Logos by <a href="https://iconscout.com/contributors/thaophan210" target="_blank">Thao Phan</a> and from <a href="https://iconscout.com/lotties/social-media" target="_blank">iconscout.com</a></h6>
+      </p>
+    </footer>
+</body>
+</html>

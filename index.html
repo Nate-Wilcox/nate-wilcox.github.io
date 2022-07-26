@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="./comnponents/navbar.css" rel="stylesheet" type="text/css" />
+		<script src="./components/navbar.js"></script>
+		<link href="./comnponents/footer.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- Your page's content -->
+		<div class="wrapper">
+			<aside>
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+						>&times;</a
+					>
+					<!-- <img src="./images/home.png" style="height: 30px; width: 30px;"> -->
+					<a href="index.html">
+						<span class="link_name">Home</span>
+					</a>
+					<a href="./pages/about.html">
+						About
+					</a>
+					<a href="./pages/project.html">
+						Projects
+					</a>
+					<a href="./pages/contact.html">
+						Contact
+					</a>
+				</div>
+				<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+				<div id="main">
+					<span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+						>&#9776; Home</span
+					>
+				</div>
+				<script>
+					function openNav() {
+						document.getElementById('mySidenav').style.width = '250px';
+						document.getElementById('main').style.marginLeft = '250px';
+						document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+					}
+					function closeNav() {
+						document.getElementById('mySidenav').style.width = '0';
+						document.getElementById('main').style.marginLeft = '0';
+						document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+					}
+				</script>
+			</aside>
+		</div>
+		<main>
+			<div class="hero-image">
+				<div class="hero-text">
+					<h1>My name is Nathaniel Wilcox</h1>
+					<p>I am a lifelong passion learner.</p>
+					<p>I am teaching myself front-end development.</p>
+					<p>I am an undergraduate student at Seattle Pacific University.</p>
+					<p>As well as a graduate from Seattle Central College.</p>
+				</div>
+			</div>
+		</main>
+		<div class="socials">
+			<style>
+				.socials {
+					display: flex;
+					flex-direction: column;
+					position: fixed;
+					right: 1%;
+					bottom: 50%;
+				}
+
+				.socicon {
+					width: 2rem;
+					height: 2rem;
+				}
+			</style>
+			<a href="https://twitter.com/Nate_Wilcox23" target="_blank"
+				><img
+					src="../images/twitter.gif"
+					alt="Twitter"
+					loading="lazy"
+					class="socicon"
+			/></a>
+			<a href="https://www.instagram.com/natewilcoxphoto/" target="_blank"
+				><img
+					src="../images//instagram.gif"
+					alt="Instagram"
+					loading="lazy"
+					class="socicon"
+			/></a>
+			<a href="https://www.linkedin.com/in/nathaniel-w-822015a7/" target="_blank"
+				><img
+					src="../images/linkedin.gif"
+					alt="Linkedin"
+					loading="lazy"
+					class="socicon"
+			/></a>
+			<a href="https://github.com/Nate-Wilcox" target="_blank"
+				><img src="../images/github.gif" alt="Github" class="socicon"
+			/></a>
+		</div>
+		<footer>
+			<p class="copy">&copy; Copyright 2022</p>
+			<p class="copy">
+				Built with &#x2661; by
+				<a
+					href="https://www.linkedin.com/in/nathaniel-w-822015a7/"
+					target="_blank"
+					>Nate Wilcox</a
+				>
+        <h6>Social Logos by <a href="https://iconscout.com/contributors/thaophan210" target="_blank">Thao Phan</a> and from <a href="https://iconscout.com/lotties/social-media" target="_blank">iconscout.com</a></h6>
+			</p>
+		</footer>
+	</body>
+	<html></html>
+</html>

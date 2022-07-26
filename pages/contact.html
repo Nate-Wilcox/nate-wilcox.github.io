@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="../style.css" rel="stylesheet" type="text/css" />
+		<link href="../comnponents/contact.css" rel="stylesheet" type="text/css" />
+		<link href="../comnponents/navbar.css" rel="stylesheet" type="text/css" />
+		<script src="../components/navbar.js"></script>
+		<link href="../comnponents/footer.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="../index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="project.html">Projects</a>
+			<a href="contact.html">Contact</a>
+		</div>
+		<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+		<div id="main">
+			<span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+				>&#9776; Contact Me</span
+			>
+			<div class="container">
+				<div style="text-align: center">
+					<h2>Contact Me</h2>
+					<p>Leave me a message or ask a question:</p>
+				</div>
+				<div class="row">
+					<div class="column">
+						<img
+							src="../images/32536900_1805608462851904_1344440216663883776_n.jpg"
+							style="width: 100%; border-radius: 3rem"
+						/>
+						<h6 style="color: dimgrey">Photo Credit: Self</h6>
+					</div>
+					<div class="column">
+						<form action="/action_page.php">
+							<label for="fname">First Name</label>
+							<input
+								type="text"
+								id="fname"
+								name="firstname"
+								placeholder="Your name.."
+							/>
+							<label for="lname">Last Name</label>
+							<input
+								type="text"
+								id="lname"
+								name="lastname"
+								placeholder="Your last name.."
+							/>
+							<label for="country">Company</label>
+							<input
+								type="text"
+								id="company"
+								name="company"
+								placeholder="Your Company (if applicable)..."
+							/>
+							<label for="subject">Subject</label>
+							<textarea
+								id="subject"
+								name="subject"
+								placeholder="Please describe your interest, project, or any other comments here..."
+								style="height: 170px"
+							></textarea>
+							<input type="submit" value="Submit" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function openNav() {
+				document.getElementById('mySidenav').style.width = '250px';
+				document.getElementById('main').style.marginLeft = '250px';
+				document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+			}
+			function closeNav() {
+				document.getElementById('mySidenav').style.width = '0';
+				document.getElementById('main').style.marginLeft = '0';
+				document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+			}
+		</script>
+		<div class="socials">
+			<style>
+				.socials {
+					display: flex;
+					flex-direction: column;
+					position: fixed;
+					right: 1%;
+					bottom: 50%;
+				}
+
+				.socicon {
+					width: 2rem;
+					height: 2rem;
+				}
+			</style>
+			<a href="https://twitter.com/Nate_Wilcox23" target="_blank"
+				><img
+					src="../images/twitter.gif"
+					alt="Twitter"
+					loading="lazy"
+					class="socicon"
+			/></a>
+			<a href="https://www.instagram.com/natewilcoxphoto/" target="_blank"
+				><img
+					src="../images//instagram.gif"
+					alt="Instagram"
+					loading="lazy"
+					class="socicon"
+			/></a>
+			<a href="https://www.linkedin.com/in/nathaniel-w-822015a7/" target="_blank"
+				><img
+					src="../images/linkedin.gif"
+					alt="Linkedin"
+					loading="lazy"
+					class="socicon"
+			/></a>
+			<a href="https://github.com/Nate-Wilcox" target="_blank"
+				><img src="../images/github.gif" alt="Github" class="socicon"
+			/></a>
+		</div>
+		<footer>
+			<p class="copy">&copy; Copyright 2022</p>
+			<p class="copy">
+				Built with &#x2661; by
+				<a
+					href="https://www.linkedin.com/in/nathaniel-w-822015a7/"
+					target="_blank"
+					>Nate Wilcox</a
+				>
+        <h6>Social Logos by <a href="https://iconscout.com/contributors/thaophan210" target="_blank">Thao Phan</a> and from <a href="https://iconscout.com/lotties/social-media" target="_blank">iconscout.com</a></h6>
+			</p>
+		</footer>
+	</body>
+</html>
