@@ -31,15 +31,21 @@ ul {
 	padding-left: 23.5rem;
 	padding-right: auto;
 	margin: 0 auto;
-	gap: 1rem;
+	gap: 2rem;
 }
 
 .card {
 	color: var(--clr-neutral-100);
+	background: linear-gradient(
+		rgb(75, 75, 75),
+		rgba(82, 82, 82, 0.404) 25%,
+		hsl(0 0% 0% / 1)
+	);
 	background-color: #474747;
 	background-size: cover;
 	padding: 0.5rem 0 0;
-	max-width: 35ch;
+	width: 35ch;
+	height: 20rem;
 	border-radius: 3rem;
 	-webkit-border-radius: 3rem;
 	-moz-border-radius: 3rem;
@@ -52,6 +58,7 @@ ul {
 	-ms-transition: transform 500ms ease;
 	-o-transition: transform 500ms ease;
 	gap: 1rem;
+	box-shadow: 10px 10px 10px 5px #bcbcbc;
 }
 
 .card:hover,
@@ -64,13 +71,9 @@ ul {
 }
 
 .card-content {
-	--padding: 1.5rem;
+	--padding: 1rem;
 	padding: var(--padding);
-	background: linear-gradient(
-		hsl(0 0% 0% / 0),
-		hsl(20 0% 0% / 0.4) 25%,
-		hsl(0 0% 0% / 1)
-	);
+	/* height: fit-content; */
 }
 
 /* .card-pic {
@@ -81,6 +84,12 @@ ul {
 .card-title {
 	position: relative;
 	width: max-content;
+	margin-bottom: 1rem;
+}
+
+.card-title::before {
+	content: '';
+	position: relative;
 }
 
 .card-title::after {
@@ -88,7 +97,7 @@ ul {
 	position: absolute;
 	height: 4px;
 	left: calc(var(--padding) * -1);
-	bottom: -2px;
+	bottom: 2px;
 	width: calc(100% + var(--padding));
 	background: var(--clr-accent-400);
 	transform-origin: left;
@@ -110,7 +119,13 @@ ul {
 
 .card-body {
 	color: var(--clr-neutral-100);
-	padding-bottom: 2rem;
+	margin: 15px;
+}
+
+.card-content img {
+	width: 100px;
+	height: 75px;
+	align-items: center;
 }
 
 @media (hover) {
