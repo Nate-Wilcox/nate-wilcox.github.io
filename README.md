@@ -8,3 +8,6 @@
 <p> This is my first attempt at a portfolio webpage usign HTML5, CSS, Javascript, and Github pages.</p>
 
 <p> I decided to do it this way instead of going through a webhosting service that gives you templates to plug and play for the experience and the indivuality that I can atain by having a webpage made from scratch that I can continiously update and deploy.</p>
+
+
+<footer>All icons from iconscout.com. Please visit them and support the artists!</footer>
